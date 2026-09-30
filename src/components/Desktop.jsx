@@ -109,6 +109,10 @@ export default function Desktop() {
           <span className={`switch ${projectsView ? 'is-on' : ''}`}>
             <span className="knob" />
           </span>
+          <span className="view-switch-label">
+            <span className="vs-long">프로젝트만 보기</span>
+            <span className="vs-short">프로젝트</span>
+          </span>
         </button>
 
         <Clock />

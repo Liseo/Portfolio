@@ -11,7 +11,7 @@ function format(now) {
     hour: 'numeric',
     minute: '2-digit',
   })
-  return `${date} ${time}`
+  return { date, time }
 }
 
 export default function Clock() {
@@ -24,5 +24,10 @@ export default function Clock() {
     return () => clearInterval(id)
   }, [])
 
-  return <span className="menubar-clock">{label}</span>
+  return (
+    <span className="menubar-clock">
+      <span className="clock-date">{label.date} </span>
+      {label.time}
+    </span>
+  )
 }

@@ -160,6 +160,8 @@ button { font-family: inherit; }
   font-weight: 600;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
+.view-switch-label { font-size: 12px; font-weight: 600; padding-right: 6px; white-space: nowrap; }
+.vs-short { display: none; }
 .view-switch:hover { background: rgba(255, 255, 255, 0.28); }
 .switch {
   position: relative;
@@ -645,6 +647,9 @@ button { font-family: inherit; }
 
 /* ── 모바일: 창을 전체화면 시트로 ── */
 @media (max-width: 768px) {
+  .clock-date { display: none; } /* 모바일: 시간만 표시해 중앙 스위치와 겹치지 않게 */
+  .vs-long { display: none; }
+  .vs-short { display: inline; }
   .menubar-nav { display: none; } /* 모바일은 하단 독/아이콘으로 대체 */
   .icon-grid {
     left: 16px; right: 16px;
