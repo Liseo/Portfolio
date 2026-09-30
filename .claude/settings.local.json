@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.rksband.com)",
+      "Bash(npm -v)",
+      "Bash(npm install *)",
+      "WebFetch(domain:codepen.io)"
+    ]
+  }
+}
