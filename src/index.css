@@ -664,4 +664,5 @@ button { font-family: inherit; }
   @keyframes sheet-in { from { transform: translateY(100%); } to { transform: none; } }
   .cards, .grid { grid-template-columns: repeat(2, 1fr); }
   .dock { bottom: 8px; }
+  .watermark { right: 0; left: 0; bottom: 78px; text-align: center; } /* 독 위로 올려 겹침 방지 */
 }
