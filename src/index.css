@@ -512,7 +512,7 @@ button { font-family: inherit; }
   font-size: 13px; font-weight: 600; color: var(--muted); pointer-events: none;
 }
 .titlebar-spacer { width: 52px; }
-.window-body { flex: 1; overflow: auto; padding: 20px; }
+.window-body { flex: 1; overflow: auto; padding: 20px; background: rgba(250, 250, 252, 0.95); } /* 겹친 창 뒤 내용이 비치지 않도록 본문은 거의 불투명 */
 
 /* ── 창 내부 문서 (shadcn/ui 라이트) ── */
 .doc { color: var(--sc-fg); }
